@@ -147,7 +147,7 @@ export async function checkLicense({email, legacyGsuite}) {
   const {gsuite, gmail_account_id} = storedData;
   let valid = false;
   try {
-    await requestLicense(gsuite, gmail_account_id);
+    // await requestLicense(gsuite, gmail_account_id);
     valid = true;
   } catch (e) {
     if (!legacyGsuite) {
